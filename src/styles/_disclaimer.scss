@@ -1,0 +1,21 @@
+#disclaimer-units {
+   position: fixed;
+   width: 100%;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -4rem);
+   height: 4rem;
+   background-color: rgb(255, 80, 30);
+
+   h3{ 
+      text-align: center;
+   }
+   p{
+      margin: auto;
+      max-width: 40rem;
+      width: 90vw;
+   }
+   span{
+      font-weight: bold;
+   }
+}
