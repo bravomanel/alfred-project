@@ -6,7 +6,7 @@ function Deserts() {
          <div>
             <h2>Deserts</h2>
             <ul>
-               <li><Link to="/deserts/brownie">Brownie</Link></li>
+               <li><Link to="brownie">Brownie</Link></li>
                <li>Beijinho</li>
                <li>Brigadeiro</li>
                <li>Cake</li>

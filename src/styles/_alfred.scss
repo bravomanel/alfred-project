@@ -1,10 +1,56 @@
-#alfredBtn {
-    margin: 0 25%;
-    font-size: medium;
-    color: black;
-    padding: .5rem .25rem;
-    width: 60%;
-    background-color: rgb(203, 204, 207);
-    border: .25rem solid black;
-    border-radius: .5rem;
+#alfredContainer {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(255, 120, 40);
+}
+
+#alfredCloseBtnSlash1, #alfredCloseBtnSlash2, #alfredCloseBtnSlash3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+}
+
+#alfredCloseBtnSlash1 {
+   -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+   transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+#alfredCloseBtnSlash2 {
+   opacity: 0;
+}
+
+#alfredCloseBtnSlash3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#closeBtn {
+   position: fixed;
+   right: 0;
+   top: 0;
+   margin: .5rem 2rem;
+}
+
+#guideBody {
+   margin: auto;
+   display: flex;
+   flex-flow: row nowrap;
+   max-width: 30rem;
+   width: 80%;
+   justify-content: space-between;
+}
+
+.guideBtn {
+   margin: auto;
+   width: 2rem;
+   height: 2rem;
+   text-align: center;
+   background-color: white;
+   border: .1rem solid black;
+   border-radius: 1rem;
 }

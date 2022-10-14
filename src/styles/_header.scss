@@ -1,10 +1,69 @@
 header {
+   position: fixed;
    width: 100%;
-   color: white;
+   height: 4rem;
    background-color: rgb(255, 120, 40);
 }
 
-#categoriesHeader {
+#emptySpace {
+   //Space to compensate header position:fixed so content doens't appear behind header
+   height: 3rem;
+}
+
+// Header
+
+#titleContainer {
+   display: grid;
+   grid-template-columns: 1fr 8fr 1fr;
+}
+
+#mobileMenuButton {
+   @media only screen and (min-width: 900px) {
+      // display: none;
+   }
+
+   z-index: 1;
+   padding: .75rem 1rem 0 1rem;
+
+}
+
+#h1 {
+   text-align: center;
+   z-index: 1;
+
+   .link {
+      font-size: 3rem;
+   }
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+
+#alfredBtnContainer {
+   color: black;
+   margin: auto;
+   text-align: center;
+}
+
+#alfredBtn {
+   margin: auto;
+   text-align: center;
+   // font-size: medium;
+   // color: black;
+   // padding: .5rem .25rem;
+   width: 4rem;
+   height: 3rem;
+   background-color: rgb(203, 204, 207);
+   border: .1rem solid black;
+   border-radius: .2rem;
+}
+
+// Desktop Menu
+
+#navMenuDesktop {
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
@@ -12,103 +71,24 @@ header {
    align-items: center;
 }
 
-// Header
-#headerSpace {
-   flex-grow: 2;
-}
-
-a{
-   text-decoration: none;
-   color: black;
-}
-
-#h1 {
-   text-align: center;
-   font-size: 3.75rem;
-   padding-bottom: 0.375rem;
-   flex-grow: 20;
-   color: black;
-}
-
-// Menu
-#menuContainer {
-   // display: inline-block;
-   cursor: pointer;
-
-   float: right;
-   // margin-right: 4rem;
-   padding-right: 1.5rem;
-   flex-grow: 1;
-}
-
-.navMenu {
-   @media only screen and (min-width: 900px) {
-      display: none;
-   }
-   width: 35px;
-   height: 5px;
-   background-color: white;
-   margin: 6px 0;
-   transition: 0.4s;
-}
-
-
-#mobileMenuContainer {
-   // display: none;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 80%;
-   height: 80%;
-   background-color: yellow;
-   color: black;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-.change {
-   #navDiv1 {
-      -webkit-transform: rotate(-45deg) translate(-8px, 7px);
-      transform: rotate(-45deg) translate(-8px, 7px);
-   }
-
-   #navDiv2 {
-      opacity: 0;
-   }
-
-   #navDiv3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
-   }
-   
-   #mobileMenuContainer {
-      display: none;
-   }
-}
-
-// Pages navigation bar links
-
-#pagesNav {
+#desktopMenuContainer {
    display: none;
+
    @media only screen and (min-width: 900px) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      font-size: 1.25rem;
-      // max-width: 50rem;
+      max-width: 50rem;
+      width: 100%;
+      margin: 0 auto;
 
       a:link,
       a:visited {
          color: black;
          text-decoration: none;
       }
+
       a:hover {
          text-decoration: underline;
       }
+
       a:active {
          text-decoration: underline;
          color: yellow;
@@ -116,4 +96,58 @@ a{
    }
 }
 
+// Mobile Menu
 
+#navSlash1,
+#navSlash2,
+#navSlash3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+}
+
+#mobileMenuContainer {
+   @media only screen and (min-width: 900px) {
+      // display: none;
+   }
+
+   transition: 0.4s;
+   height: 12rem;
+   background-color: rgb(255, 120, 40);
+   z-index: 0;
+   width: 100%;
+   font-size: 1.5rem;
+
+   li {
+      list-style-type: none;
+   }
+}
+
+// Animations
+
+.mobileMenuTransition {
+   -webkit-transform: translate(0px, -16rem);
+   transform: translate(0px, -16rem);
+}
+
+.change {
+   #navSlash1 {
+      -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+      transform: rotate(-45deg) translate(-8px, 7px);
+   }
+
+   #navSlash2 {
+      opacity: 0;
+   }
+
+   #navSlash3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+   }
+
+   #mobileMenuContainer {
+      display: none;
+   }
+}

@@ -1,0 +1,22 @@
+*, body { 
+   margin: 0;
+}
+
+@import "header";
+@import "bodyRecipe";
+@import "alfred";
+@import "disclaimer";
+
+.hidden {
+   display: none;
+}
+
+
+/* 
+
+Colors:
+
+orange:
+rgb(255, 120, 40)
+
+*/
