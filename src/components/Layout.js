@@ -2,15 +2,16 @@ import { useState } from 'react';
 import alfredFunction from '../functions/alfredFunction';
 
 import Header from "./Header";
-// import Disclaimer from "./Disclaimer";
+import Disclaimer from "./Disclaimer";
 import Alfred from "./Alfred";
+import { Outlet } from 'react-router-dom/dist';
 
 
 
 
 function Layout(props) {
    const [isActive, setActive] = useState(false);
-   
+
    // function to toggle Class and Active/Hide state CSS
    const toggleActive = () => {
       setActive(!isActive);
@@ -20,9 +21,9 @@ function Layout(props) {
    // COMPLEMENT OF ALFRED FUNCTION, to be replaced somewhere else
    const [theTitle, theContent] = alfredFunction();
    // const miseEnPlace = theContent[0];
-   
 
-   
+
+
    // let theMiseEnPlace = [miseEnPlace[0]]
    // theMiseEnPlace.push(miseEnPlace[1])
    //    // makeList(miseEnPlace[1])
@@ -30,17 +31,17 @@ function Layout(props) {
 
    return (
       <section>
-         <Header toggleFunction={toggleActive} />
+         <Header toggleFunction={props.toggleActive} />
          <div id='emptySpace'></div>
 
-         <main>{props.children}</main>
+         <Outlet context={{toggleActive: toggleActive}} />
          <Alfred
-            containerClass={isActive} 
+            containerClass={isActive}
             toggleFunction={toggleActive}
             title={theTitle}
             content={theContent}
-            />
-         {/* <Disclaimer /> */}
+         />
+         <Disclaimer />
       </section>
    )
 }

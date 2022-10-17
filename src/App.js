@@ -1,17 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 
 import Layout from "./components/Layout";
+
 import Main from "./pages/Main";
 import Eggs from "./pages/Eggs";
 import Hamburguer from "./pages/Hamburguer"
 import Desert from "./pages/Desert";
 import Pasta from "./pages/Pasta";
 import Pizza from "./pages/Pizza";
-
 import Brownie from "./pages/deserts/Brownie";
-
 import Meat from "./pages/hamburguer/Meat";
-
 import PanFried from "./pages/eggs/PanFried";
 
 import "./styles/mainStyle.css";
@@ -19,30 +17,40 @@ import "./styles/mainStyle.css";
 
 function App() {
    return (
-      <Layout>
+      <>
+
+         {/* <div id='emptySpace'></div> */}
          <Routes>
 
             {/* MAIN */}
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Layout />}>
+               <Route index element={<Main />}/>
 
             {/* Header Links */}
-            <Route path="/hamburguer/" element={<Hamburguer />} />
             <Route path="/pasta/" element={<Pasta />} />
             <Route path="/pizza/" element={<Pizza />} />
-            <Route path="/deserts/" element={<Desert />} />
-            <Route path="/eggs/" element={<Eggs />} />
 
             {/* Deserts */}
-            <Route path="/deserts/brownie" element={<Brownie />} />
+            <Route path="deserts">
+               <Route index element={<Desert />} />
+               <Route path="brownie" element={<Brownie />} />
+            </Route>
 
             {/* Hamburguer */}
-            <Route path="/hamburguer/meat" element={<Meat />} />
+            <Route path="/hamburguer">
+               <Route index element={<Hamburguer />} />
+               <Route path="meat" element={<Meat />} />
+            </Route>
 
             {/* Eggs */}
-            <Route path="/eggs/pan_fried" element={<PanFried />} />
+            <Route path="/eggs">
+               <Route index  element={<Eggs />}/>
+               <Route path="/eggs/pan_fried" element={<PanFried />} />
+            </Route>
 
+            </Route>
          </Routes>
-      </Layout>
+      </>
    );
 }
 

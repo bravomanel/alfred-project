@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from "react";
+import { AlfredButton } from './AlfredButton';
 
 
 function Header(props) {
@@ -39,11 +40,6 @@ function Header(props) {
                   Alfred
                </Link>
             </h1>
-
-            <div id='alfredBtnContainer'>
-               <button id="alfredBtn" onClick={props.toggleFunction}>Alfred's Guide</button>
-            </div>
-
          </div>
 
          <nav id="mobileMenuContainer" className={isActive ? null : "mobileMenuTransition "}>

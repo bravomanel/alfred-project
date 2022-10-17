@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Hamburguer() {
    return (
-      <div>
+      <main>
          <h2>Hamburguer</h2>
          <ul>
             <li><Link to="meat">Hamburguer Meat</Link></li>
@@ -10,7 +10,7 @@ function Hamburguer() {
             <li>Classic Burguer</li>
             <li></li>
         </ul>
-      </div>
+      </main>
    )
 }
 

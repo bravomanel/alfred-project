@@ -1,7 +1,16 @@
-function Brownie(props) {
+import { useOutletContext } from "react-router-dom/dist";
+import { AlfredButton } from "../../components/AlfredButton";
+
+function Brownie() {
+
+   const obj = useOutletContext();
+
    return (
-      <div>
+      <main>
          <h2 id="recipeTitle">Brownie</h2>
+
+         <AlfredButton toggleFunction={obj.toggleActive} />
+
 
          <div id="miseEnPlace" className="recipeStyle">
             <h3>Mise en Place</h3>
@@ -64,7 +73,7 @@ function Brownie(props) {
                <li>Enjoy!</li>
             </ol>
          </div>
-      </div>
+      </main>
    )
 }
 

@@ -9,7 +9,6 @@ function Alfred(props) {
       if (!(indexValue > 2) && !(indexValue < 0) ) { 
          setIndex(indexValue)
       }
-      console.log(index)
    }
 
    const makeList = (part) => {

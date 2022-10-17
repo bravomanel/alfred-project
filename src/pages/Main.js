@@ -1,6 +1,6 @@
 function Main() {
    return (
-      <section>
+      <main>
          <h2>Hello, my name is Alfred, and I'm your Cooking Bot</h2>
          <p>
             My purpose is to provide your next step while you're desperate in
@@ -10,7 +10,7 @@ function Main() {
          <p>
             Or maybe just make your cooking experience a little more convenient
          </p>
-      </section>
+      </main>
    )
 }
 

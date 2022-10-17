@@ -8,6 +8,10 @@ header {
   height: 4rem;
   background-color: rgb(255, 120, 40);
 }
+header li {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
 
 #emptySpace {
   height: 3rem;
@@ -33,22 +37,6 @@ header {
 a {
   text-decoration: none;
   color: black;
-}
-
-#alfredBtnContainer {
-  color: black;
-  margin: auto;
-  text-align: center;
-}
-
-#alfredBtn {
-  margin: auto;
-  text-align: center;
-  width: 4rem;
-  height: 3rem;
-  background-color: rgb(203, 204, 207);
-  border: 0.1rem solid black;
-  border-radius: 0.2rem;
 }
 
 #navMenuDesktop {
@@ -100,10 +88,6 @@ a {
   width: 100%;
   font-size: 1.5rem;
 }
-#mobileMenuContainer li {
-  list-style-type: none;
-}
-
 .mobileMenuTransition {
   transform: translate(0px, -16rem);
 }
@@ -122,8 +106,8 @@ a {
 }
 
 main {
-  margin-top: 5rem;
-  margin: 0 auto;
+  margin: 5rem auto;
+  width: 40rem;
 }
 
 h2 {
@@ -137,13 +121,30 @@ h2 {
   font-size: 1.3rem;
 }
 
+#alfredBtnContainer {
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+
+#alfredBtn {
+  margin: auto;
+  text-align: center;
+  width: 4rem;
+  height: 3rem;
+  background-color: rgb(203, 204, 207);
+  border: 0.1rem solid black;
+  border-radius: 0.2rem;
+}
+
 #alfredContainer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 120, 40);
+  z-index: 1;
 }
 
 #alfredCloseBtnSlash1, #alfredCloseBtnSlash2, #alfredCloseBtnSlash3 {
@@ -207,7 +208,7 @@ h2 {
 #disclaimer-units p {
   margin: auto;
   max-width: 40rem;
-  width: 90vw;
+  width: 90%;
 }
 #disclaimer-units span {
   font-weight: bold;

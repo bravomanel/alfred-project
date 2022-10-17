@@ -1,6 +1,6 @@
 function Panfried() {
    return (
-      <div>
+      <main>
          <h2>Pan Fried Eggs</h2>
          <button id="stories">Stories Like Recipe</button>
          <div id="needed">
@@ -43,7 +43,7 @@ function Panfried() {
                </li>
             </ol>
          </div>
-      </div>
+      </main>
    )
 }
 

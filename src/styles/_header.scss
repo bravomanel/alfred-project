@@ -3,6 +3,11 @@ header {
    width: 100%;
    height: 4rem;
    background-color: rgb(255, 120, 40);
+
+   li {
+      font-size: 1.5rem;
+      list-style-type: none;
+   }
 }
 
 #emptySpace {
@@ -39,26 +44,6 @@ header {
 a {
    text-decoration: none;
    color: black;
-}
-
-
-#alfredBtnContainer {
-   color: black;
-   margin: auto;
-   text-align: center;
-}
-
-#alfredBtn {
-   margin: auto;
-   text-align: center;
-   // font-size: medium;
-   // color: black;
-   // padding: .5rem .25rem;
-   width: 4rem;
-   height: 3rem;
-   background-color: rgb(203, 204, 207);
-   border: .1rem solid black;
-   border-radius: .2rem;
 }
 
 // Desktop Menu
@@ -119,10 +104,6 @@ a {
    z-index: 0;
    width: 100%;
    font-size: 1.5rem;
-
-   li {
-      list-style-type: none;
-   }
 }
 
 // Animations

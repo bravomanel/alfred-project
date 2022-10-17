@@ -1,6 +1,6 @@
 function Meat() {
    return (
-      <div>
+      <main>
          <h2>Hamburguer Meat</h2>
          <div>
             <p>
@@ -43,7 +43,7 @@ function Meat() {
             <h3 id="point">Point of the Meat</h3>
             <h3 id="seasoning">Seasoning of the Meat</h3>
          </div>
-      </div>
+      </main>
    )
 }
 

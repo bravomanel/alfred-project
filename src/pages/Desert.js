@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 function Deserts() {
    return (
-
-         <div>
+         <main>
             <h2>Deserts</h2>
             <ul>
                <li><Link to="brownie">Brownie</Link></li>
@@ -12,7 +11,7 @@ function Deserts() {
                <li>Cake</li>
             </ul>
 
-         </div>
+         </main>
    )
 }
 

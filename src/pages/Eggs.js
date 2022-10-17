@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Eggs() {
    return (
-      <section>
+      <main>
          <h2>Eggs</h2>
          <ul>
             <li><Link to="pan_fried">Pan Fried</Link></li>
@@ -11,7 +11,7 @@ function Eggs() {
             <li>Coocked</li>
             <li>Bain Marie</li>
          </ul>
-      </section>
+      </main>
    )
 }
 
