@@ -41,7 +41,7 @@ function Layout(props) {
             title={theTitle}
             content={theContent}
          />
-         <Disclaimer />
+         {/* <Disclaimer /> */}
       </section>
    )
 }

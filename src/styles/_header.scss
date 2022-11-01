@@ -23,13 +23,8 @@ header {
 }
 
 #mobileMenuButton {
-   @media only screen and (min-width: 900px) {
-      // display: none;
-   }
-
    z-index: 1;
    padding: .75rem 1rem 0 1rem;
-
 }
 
 #h1 {
@@ -47,7 +42,6 @@ a {
 }
 
 // Desktop Menu
-
 #navMenuDesktop {
    display: flex;
    flex-direction: row;
@@ -82,7 +76,6 @@ a {
 }
 
 // Mobile Menu
-
 #navSlash1,
 #navSlash2,
 #navSlash3 {
@@ -103,11 +96,9 @@ a {
    background-color: rgb(255, 120, 40);
    z-index: 0;
    width: 100%;
-   font-size: 1.5rem;
 }
 
 // Animations
-
 .mobileMenuTransition {
    -webkit-transform: translate(0px, -16rem);
    transform: translate(0px, -16rem);

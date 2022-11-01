@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useState } from "react";
-import { AlfredButton } from './AlfredButton';
 
 
 function Header(props) {

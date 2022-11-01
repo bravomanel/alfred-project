@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  margin-bottom: 5rem;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -26,6 +30,7 @@ header li {
   z-index: 1;
   padding: 0.75rem 1rem 0 1rem;
 }
+
 #h1 {
   text-align: center;
   z-index: 1;
@@ -86,7 +91,6 @@ a {
   background-color: rgb(255, 120, 40);
   z-index: 0;
   width: 100%;
-  font-size: 1.5rem;
 }
 .mobileMenuTransition {
   transform: translate(0px, -16rem);
@@ -106,8 +110,8 @@ a {
 }
 
 main {
-  margin: 5rem auto;
-  width: 40rem;
+  margin: 0rem auto;
+  max-width: 40rem;
 }
 
 h2 {
@@ -116,25 +120,71 @@ h2 {
   text-align: center;
 }
 
+.recipeStyle {
+  padding-top: 1rem;
+}
 .recipeStyle h3 {
+  padding-bottom: 0.5rem;
   text-align: center;
+  font-size: 1.6rem;
+}
+
+#miseEnPlaceList {
   font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#miseEnPlaceList input {
+  cursor: pointer;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+#ingredients {
+  font-size: 1.3rem;
+}
+#ingredients p {
+  font-size: 1.1rem;
+}
+
+#considerations {
+  font-size: 1.1rem;
+}
+
+#tips {
+  font-size: 1.1rem;
+}
+
+#cooking {
+  font-size: 1.3rem;
+}
+
+#alfredBtn {
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 16rem;
+  height: 3rem;
+  background-color: rgb(255, 120, 40);
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+#alfredBtn:hover {
+  border-bottom: 0.2rem solid black;
+  border-right: 0.2rem solid black;
+}
+#alfredBtn:active {
+  border-top: 0.2rem solid black;
+  border-left: 0.2rem solid black;
+  border-bottom: 0 solid black;
+  border-right: 0 solid black;
 }
 
 #alfredBtnContainer {
   color: black;
   margin: auto;
   text-align: center;
-}
-
-#alfredBtn {
-  margin: auto;
-  text-align: center;
-  width: 4rem;
-  height: 3rem;
-  background-color: rgb(203, 204, 207);
-  border: 0.1rem solid black;
-  border-radius: 0.2rem;
 }
 
 #alfredContainer {
@@ -147,7 +197,8 @@ h2 {
   z-index: 1;
 }
 
-#alfredCloseBtnSlash1, #alfredCloseBtnSlash2, #alfredCloseBtnSlash3 {
+#alfredCloseBtnSlash1,
+#alfredCloseBtnSlash2 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -160,37 +211,71 @@ h2 {
 }
 
 #alfredCloseBtnSlash2 {
-  opacity: 0;
-}
-
-#alfredCloseBtnSlash3 {
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg);
 }
 
 #closeBtn {
   position: fixed;
   right: 0;
   top: 0;
+  width: 2.4rem;
+  height: 2.4rem;
   margin: 0.5rem 2rem;
+}
+#closeBtn:hover #alfredCloseBtnSlash1,
+#closeBtn:hover #alfredCloseBtnSlash2 {
+  height: 6px;
+}
+
+#alfredRecipeTitle {
+  font-size: 1.75rem;
+  margin: 1rem;
 }
 
 #guideBody {
   margin: auto;
   display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.25rem;
+  width: 30rem;
+  max-width: 100vw;
+  height: 80vh;
+}
+
+#guideTitle {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#guideTitleContainer {
+  display: flex;
   flex-flow: row nowrap;
-  max-width: 30rem;
-  width: 80%;
   justify-content: space-between;
 }
 
 .guideBtn {
-  margin: auto;
   width: 2rem;
   height: 2rem;
   text-align: center;
   background-color: white;
   border: 0.1rem solid black;
   border-radius: 1rem;
+}
+
+#guideContent {
+  margin: 0.5rem auto;
+  max-width: 75vw;
+}
+#guideContent ol {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.itemLabel input {
+  cursor: pointer;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.25rem;
 }
 
 #disclaimer-units {

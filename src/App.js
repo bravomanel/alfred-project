@@ -24,6 +24,7 @@ function App() {
 
             {/* MAIN */}
             <Route path="/" element={<Layout />}>
+               <Route path="/index.html" element={<Layout />}/>
                <Route index element={<Main />}/>
 
             {/* Header Links */}

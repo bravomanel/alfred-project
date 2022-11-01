@@ -1,5 +1,5 @@
 const alfredFunction = () => {
-   const miseEnPlaceList = Array.from(document.querySelectorAll('#miseEnPlace li'));
+   const miseEnPlaceList = Array.from(document.querySelectorAll('#miseEnPlace label'));
    const ingredientsList = Array.from(document.querySelectorAll('#ingredients li'));
    const cookingList = Array.from(document.querySelectorAll('#cooking li'));
    let theTitle = 'opa'

@@ -11,25 +11,37 @@ function Brownie() {
 
          <AlfredButton toggleFunction={obj.toggleActive} />
 
-
          <div id="miseEnPlace" className="recipeStyle">
             <h3>Mise en Place</h3>
             <ul id="miseEnPlaceList">
-               <li>Butter</li>
-               <li>Chocolate</li>
-               <li>Sugar</li>
-               <li>Flower</li>
-               <li>Eggs</li>
-               <li>Salt</li>
-               <li>A pot</li>
-               <li>A spoon</li>
+               <label>
+                  <input type='checkbox' />Butter
+               </label>
+               <label>
+                  <input type='checkbox' />Chocolate
+               </label>
+               <label>
+                  <input type='checkbox' />Sugar
+               </label>
+               <label>
+                  <input type='checkbox' />Flower
+               </label>
+               <label>
+                  <input type='checkbox' />Eggs
+               </label>
+               <label>
+                  <input type='checkbox' />Instant Coffee
+               </label>
+               <label>
+                  <input type='checkbox' />Spoon
+               </label>
             </ul>
          </div>
 
          <div id="ingredients" className="recipeStyle">
             <h3>Ingredients</h3>
             <ul>
-               <h4>To make a 400g Brownie, which will serve around 10 portions, you will need:</h4>
+               <p>To make a 400g Brownie, which will serve around 10 portions, you will need:</p>
                <li>125g of butter</li>
                <li>125g of chocolate</li>
                <li>100g of sugar</li>

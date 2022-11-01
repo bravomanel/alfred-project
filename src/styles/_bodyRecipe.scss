@@ -1,6 +1,6 @@
 main {
-   margin: 5rem auto;
-   width: 40rem;
+   margin: 0rem auto;
+   max-width: 40rem;
 }
 
 h2 {
@@ -10,8 +10,43 @@ h2 {
 }
 
 .recipeStyle {
+   padding-top: 1rem;
+
    h3 {
+      padding-bottom: .5rem;
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1.6rem;
    }
+}
+
+#miseEnPlaceList {
+   font-size: 1.3rem;
+   display: grid;
+   grid-template-columns: auto auto;
+   input {
+      cursor: pointer;
+      height: 1.25rem;
+      width: 1.25rem;
+      margin-right: .25rem;
+    }
+}
+
+#ingredients {
+   font-size: 1.3rem;
+
+   p {
+      font-size: 1.1rem;
+   }
+}
+
+#considerations {
+   font-size: 1.1rem;
+}
+
+#tips {
+   font-size: 1.1rem;
+}
+
+#cooking {
+   font-size: 1.3rem;
 }
