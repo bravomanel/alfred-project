@@ -8,9 +8,11 @@ import Hamburguer from "./pages/Hamburguer"
 import Desert from "./pages/Desert";
 import Pasta from "./pages/Pasta";
 import Pizza from "./pages/Pizza";
-import Brownie from "./pages/deserts/Brownie";
-import Meat from "./pages/hamburguer/Meat";
-import PanFried from "./pages/eggs/PanFried";
+
+import Brownie from "./pages/recipes/Brownie";
+import Esfiha from "./pages/recipes/Esfiha";
+import Meat from "./pages/recipes/Meat";
+import PanFriedEggs from "./pages/recipes/PanFriedEggs";
 
 import "./styles/mainStyle.css";
 
@@ -46,7 +48,13 @@ function App() {
             {/* Eggs */}
             <Route path="/eggs">
                <Route index  element={<Eggs />}/>
-               <Route path="/eggs/pan_fried" element={<PanFried />} />
+               <Route path="pan-fried-eggs" element={<PanFriedEggs />} />
+            </Route>
+
+            {/* Pizza */}
+            <Route path="/pizza">
+               <Route index  element={<Pizza />}/>
+               <Route path="esfiha" element={<Esfiha />} />
             </Route>
 
             </Route>

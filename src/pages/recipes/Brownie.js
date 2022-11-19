@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router-dom/dist";
 import { AlfredButton } from "../../components/AlfredButton";
 
-function Brownie() {
+function Brownie(props) {
 
    const obj = useOutletContext();
 

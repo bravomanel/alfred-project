@@ -1,5 +1,5 @@
 import { useOutletContext } from "react-router-dom/dist";
-import { AlfredButton } from "../components/AlfredButton";
+import { AlfredButton } from "../../components/AlfredButton";
 
 function Title() {
 
@@ -14,14 +14,19 @@ function Title() {
          <div id="miseEnPlace" className="recipeStyle">
             <h3>Mise en Place</h3>
             <ul id="miseEnPlaceList">
-               <li></li>
+               <label>
+                  <input type='checkbox' />Butter
+               </label>
+               <label>
+                  <input type='checkbox' />Butter
+               </label>
             </ul>
          </div>
 
          <div id="ingredients" className="recipeStyle">
             <h3>Ingredients</h3>
             <ul>
-               <h4>To make X grams of Y, which will serve around Z portions, you will need:</h4>
+               <p>To make X grams of Y, which will serve around Z portions, you will need:</p>
                <li></li>
             </ul>
          </div>
@@ -33,9 +38,7 @@ function Title() {
 
          <div id="tips" className="recipeStyle">
             <h3>Tips</h3>
-            <ul>
-               <li></li>
-            </ul>
+            <p></p>
          </div>
 
          <div id="cooking" className="recipeStyle">

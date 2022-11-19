@@ -5,7 +5,7 @@ function Eggs() {
       <main>
          <h2>Eggs</h2>
          <ul>
-            <li><Link to="pan_fried">Pan Fried</Link></li>
+            <li><Link to="pan-fried-eggs">Pan Fried</Link></li>
             <li>Scrambled</li>
             <li>Poached</li>
             <li>Coocked</li>
